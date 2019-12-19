@@ -8,7 +8,7 @@ def new_max (array)
 
   array.each do |i|
     if i > max_value
-      new_max = i
+      max_value = i
     end
   end
 
