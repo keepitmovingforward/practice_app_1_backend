@@ -1,4 +1,5 @@
 require 'rspec'
+require 'pry'
 
 class Array
   def bubble_sort
@@ -10,12 +11,21 @@ class Array
       (n-1).times do |i|
         if self[i] > self[i+1]
           self[i], self[i+1] = self[i+1], self[i]
+          swapped = true
+        end
       end
-      break if not swapped
+
+      if !swapped
+        break
+      end
     end
+    self
   end
 
 end
+
+arr = [4, 1, 6, 10, 44, 2, 3]
+print arr.bubble_sort
 
 
 describe 'Adding bubble sort to the array class' do
