@@ -5,7 +5,13 @@ class Array
     n = self.length
 
     loop do
-      
+      swapped = false
+
+      (n-1).times do |i|
+        if self[i] > self[i+1]
+          self[i], self[i+1] = self[i+1], self[i]
+      end
+      break if not swapped
     end
   end
 
