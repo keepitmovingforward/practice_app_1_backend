@@ -3,7 +3,7 @@ require 'rspec'
 class Hash
 
   def param_converter
-    self.map { |i| i * "=" } * "&"
+    self.map { |i| i * " |inner_join| " } * " |outer_join| "
   end
 
 end
