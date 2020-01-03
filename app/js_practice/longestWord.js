@@ -2,12 +2,14 @@ function longestWord (str) {
   let words = str.split(" ");
   let longestWord = '';
 
-  for (word of words) {
-    if (word.)
+  for (let word of words) {
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
   }
 
-  return str;
+  return longestWord;
 }
 
 console.log(longestWord("I woke up early today"));
-console.log(longestWord("I went straight to the beach"))
+console.log(longestWord("I went straight to the beachstravaganza"))
