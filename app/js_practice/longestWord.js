@@ -12,4 +12,4 @@ function longestWord (str) {
 }
 
 console.log(longestWord("I woke up in the morning today"));
-console.log(longestWord("I went straight to the beachstravaganza"))
+console.log(longestWord("In Marie Poppins supercalifragilisticexpialidocious is my favorite word"))
