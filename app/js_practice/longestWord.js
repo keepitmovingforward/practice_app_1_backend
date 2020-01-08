@@ -11,5 +11,5 @@ function longestWord (str) {
   return longestWord;
 }
 
-console.log(longestWord("I woke up early today"));
+console.log(longestWord("I woke up in the morning today"));
 console.log(longestWord("I went straight to the beachstravaganza"))
